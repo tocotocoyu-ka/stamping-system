@@ -1,0 +1,69 @@
+.header {
+    background-color: #FFF;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 30px;
+    max-width: 1230px;
+    height: 70px;
+}
+
+.header-utilities {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav__item {
+    font-size: 12px;
+}
+
+.stamping-content {
+    margin: 0 auto;
+    max-width: 1230px;
+    background-color: #EEE;
+}
+
+.stamping-heading {
+    font-size: 14px;
+    margin: 20px 15px;
+    text-align: center;
+}
+
+.stamping__button {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.footer {
+    background: #FFF;
+}
+
+.footer__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    height: 30px;
+}
+
+.footer__logo {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px;
+}

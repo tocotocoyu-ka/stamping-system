@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthenticatedSessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/login', [AuthenticatedSessionController::class, 'login']);
+Route::post('/stamp', [AuthenticatedSessionController::class, 'store']);
+/*以下後で消す！*/
+Route::get('/stamping/stamp', [StampingController::class, 'stamp']);
+Route::post('/stamping/stamp', [StampingController::class, 'stamp']);

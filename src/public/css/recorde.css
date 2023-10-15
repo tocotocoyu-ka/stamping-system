@@ -1,0 +1,99 @@
+.header {
+    background-color: #FFF;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 30px;
+    max-width: 1230px;
+    height: 70px;
+}
+
+.header-utilities {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav__item {
+    font-size: 12px;
+}
+
+.record__content {
+    margin: 0 auto;
+    max-width: 1230px;
+    background-color: #EEE;
+}
+
+.record__heading {
+    margin: 20px 15px;
+    text-align: center;
+}
+
+.record__button {
+    background-color: #FFF;
+}
+
+.heading__logo {
+    font-weight: bold;
+}
+
+.form {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+}
+
+.record-table {
+    text-decoration: overline;
+}
+
+.record-table__inner {
+    width: 100%;
+}
+
+.record-table__header {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.record-table__text {
+    padding: 15px;
+}
+
+.record-table__text input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.footer {
+    background: #FFF;
+}
+
+.footer__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    height: 30px;
+}
+
+.footer__logo {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight:bold;
+    padding: 15px;
+}

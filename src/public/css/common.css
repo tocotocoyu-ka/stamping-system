@@ -1,0 +1,37 @@
+.header {
+    background-color: #FFF;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 30px;
+    max-width: 1230px;
+    height: 70px;
+}
+
+.header__logo {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.footer {
+    background: #FFF;
+}
+
+.footer__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    height: 30px;
+}
+
+.footer__logo {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px;
+}
