@@ -13,7 +13,7 @@ http://localhost/login/
 ログイン機能、会員登録機能、打刻機能、打刻履歴閲覧機能
 
 ## 使用技術
-Laravel8.x
+Laravel8.83.8
 
 ## テーブル設計
 ![image](https://github.com/tocotocoyu-ka/stamping-system/assets/138411087/8d9e5ee7-6ccf-4a69-a3f8-f8b5c7098990)
