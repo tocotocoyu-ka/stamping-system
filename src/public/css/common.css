@@ -9,11 +9,31 @@
     height: 70px;
 }
 
+.header-utilities {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header__logo {
     color: #000;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav__item {
+    margin: 10px;
+}
+
+.header-button {
+    border: none;
+    cursor: pointer;
+    background: #fff;
 }
 
 .footer {

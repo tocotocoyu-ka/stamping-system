@@ -33,6 +33,12 @@
     appearance: none;
 }
 
+.form__error {
+    color: red;
+    text-align: left;
+    height: 20px;
+}
+
 .form__button {
     margin-top: 10px;
     text-align: center;

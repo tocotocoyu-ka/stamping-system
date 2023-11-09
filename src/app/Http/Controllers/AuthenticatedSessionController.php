@@ -3,22 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Create;
+use App\Http\Request\CreateRequest;
 
 class AuthenticatedSessionController extends Controller
 {
-    public function login()
+    public function access()
     {
         return view('login');
     }
-
-    public function stamp(Request $request)
+    
+    public function login(ContactRequest $request)
     {
         $login = $request->only(['email', 'password']);
-        return view('stamp', ['login' => $login]);
+        return $login;
     }
 
-    public function store()
-    {
-        $login = $request->only(['email', 'password']);
-    }
 }

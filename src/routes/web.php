@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthenticatedSessionController;
+use App\Http\Controllers\CreatedUserController;
+use App\Http\Controllers\StampingController;
+use App\Http\Controllers\RecordedController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +17,13 @@ use App\Http\Controllers\AuthenticatedSessionController;
 |
 */
 
-Route::get('/login', [AuthenticatedSessionController::class, 'login']);
-Route::post('/stamp', [AuthenticatedSessionController::class, 'store']);
-/*以下後で消す！*/
-Route::get('/stamping/stamp', [StampingController::class, 'stamp']);
-Route::post('/stamping/stamp', [StampingController::class, 'stamp']);
+Route::post('/create', [CreatedUserController::class, 'store']);
+Route::get('/login', [AuthenticatedSessionController::class, 'access']);
+Route::middleware('auth')->group(function () {
+    Route::get('/stamp', [StampingController::class, 'stamp']);
+});
+Route::get('/record', [RecordedController::class, 'index']);
+Route::post('/stamp', [StampingController::class,'store']);
+
+//確認用　以降削除//
+Route::get('/create', [CreatedUserController::class, 'createuser']);
