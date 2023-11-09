@@ -12,5 +12,6 @@ class StampingController extends Controller
     public function store(Request $request)
     {
         $stamp = $request->only(['started_at', 'ended_at']);
+        Stamp::create($stamp);
     }
 }

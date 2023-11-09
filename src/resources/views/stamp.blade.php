@@ -7,8 +7,8 @@
 @section('content')
 <div class="stamping-content">
     <div class="stamping-heading">
-        @foreach ($creates as $create)
-        <h2>{{$create->name}}お疲れ様です！</h2>
+        @foreach ($users as $user)
+        <h2>{{$user->name}}お疲れ様です！</h2>
         @endforeach
     </div>
     <form class="stamping__button" action="/stamp" method="post">

@@ -24,6 +24,3 @@ Route::middleware('auth')->group(function () {
 });
 Route::get('/record', [RecordedController::class, 'index']);
 Route::post('/stamp', [StampingController::class,'store']);
-
-//確認用　以降削除//
-Route::get('/create', [CreatedUserController::class, 'createuser']);
